@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>Appunti di viaggio - Homepage</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="header-items">
+            <h1 class="center"><a href="index.html" class="logo">Appunti <br> di Viaggio</a></h1>
+            <div class="hamburger-container"> 
+                <a href="#" id="hamburger"><img src="img/icons/burger-icon.png" alt="Hamburger Menu" width="44" ></a>
+            </div>
+            <nav>
+                <ul id="apriMenu" class="hide">
+                    <li><a href="index.html" id="current-page">Home</a></li>
+                    <li><a href="destinazioni.html">Destinazioni</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="contatti-button center"><a href="contatti.html">Contatti</a></div>
+        </div>
+    </header>
+
+
+    <section class="sezione-preventivo">
+
+            <article class="section-title">
+                <h1> Viaggia verso <br>
+                    la destinazione <br>
+                    dei tuoi sogni </h1>
+                <p>Sei pronto a scoprire la destinazione dei tuoi sogni? Lasciati trasportare in un viaggio straordinario alla ricerca della meta perfetta,quella che ti farà sentire veramente vivo. </p>
+                <button id="green-button">Richiedi preventivo</button>
+            </article>
+
+            <figure>
+                <img src="img/india1.jpg" alt="vacca in India" width="100%">
+            </figure>
+    </section>
+    
+    <section class="sezione-community">
+        
+            <article class="section-title center">
+                <h1>Crea i tuoi momenti da ricordare</h1>
+                <p>"Non aspettare che i sogni ti trovino: crea la tua vita da ricordare ogni giorno"</p>
+                <button id="black-button">Iscriviti alla community</button>
+            </article>
+       
+    </section>
+
+    <section class="sezione-scopri">
+            <article class="section-title center">
+                <h1>Scopri posti sconosciuti! </h1>
+                <p>Sii il protagonista della tua storia e crea i sogni che ti porteranno verso ciò che desideri. </p>
+            </article>
+
+            <div class="columns">
+
+                <figure class="left-column">
+                    <img src="img/vietnam1-redim.jpg" alt="Donna vietnamita con cappello da risaia" width="100%">
+                </figure>
+
+                <article class="right-column section-title">
+                    <figure>
+                        <img src="img/vietnam2-redim.jpg" alt="Donna vietnamita che cuce su una barca" width="100%">
+                    </figure>
+                    <h3 class="border-bottom">Non importa se si tratta di un'isola paradisiaca, <br> di una città vibrante, <br> o di una natura selvaggia.</h3>
+                    <p>La destinazione dei tuoi sogni è il luogo dove ritroverai te stesso e dove ogni giorno potrai vivere appieno le emozioni più autentiche. 
+                    </p>
+                    <p>Preparati a vivere un'esperienza unica e irripetibile: il viaggio verso la destinazione dei tuoi sogni ti aspetta! </p>
+                </article>
+            </div>
+    </section>
+
+    <section class="sezione-volo">
+            <article class="section-title">
+                <h2>Scegli il posto <br> dove vorresti essere</h2>
+                <h3>Ascolta il tuo volo!</h3>
+                <p><strong>"Scegli il posto dove vorresti essere"</strong> è un invito a fare una riflessione sulle proprie aspirazioni, desideri e bisogni.</p>
+                <p>Spesso ci ritroviamo immersi nella routine quotidiana, senza prenderci il tempo per chiederci se siamo veramente felici dove ci troviamo.</p>
+                <p>Questo invito ci spingea immaginare il luogo ideale dove vorremmo essere, prova anche tu ad ascoltare il tuo volo!</p>
+            </article>
+
+            <figure>
+                <img src="img/peru2.jpg" alt="Aquila che vola su paesaggio peruviano" width="100%">
+            </figure>
+    </section>
+
+    <footer> 
+           <h1><a href="index.html" class="logo">Appunti <br> di Viaggio</a></h1>
+            <p>2023 Appunti di Viaggio. All Rights Reserved. </p>
+            
+        <figure class="socials">
+                <a href="#"><img src="img/icons/facebook.png" alt="facebook logo"></a>
+                <a href="#"><img src="img/icons/insta.png" alt="instagram logo"></a>
+        </figure>
+
+
+    </footer>
+
+    <script>
+        document.getElementById( 'hamburger' ).addEventListener( 'click', function () {
+  
+  document.getElementById( 'apriMenu' ).toggleClass( 'hide' );
+  
+}, false );
+
+Element.prototype.toggleClass = function ( className ) {
+
+  if( this.className.split( ' ' ).indexOf( className ) == -1 ) {
+      
+      this.className = ( this.className + ' ' + className ).trim();
+      
+  } else {
+      
+      this.className = this.className.replace( new RegExp( '(\\s|^)' + className + '(\\s|$)' ), ' ' ).trim();
+      
+  };
+   };
+
+   </script>
+</body>
+</html>
