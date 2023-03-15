@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <!-- Hai dimenticato di collegare il css per renderlo responsive -->
     <title>Appunti di Viaggio - About</title>
 </head>
 <body>
@@ -40,7 +42,9 @@
             </article>
 
             <figure>
-                <img src="img/young-people.jpg" alt="giovani in spiaggia" width="100%">
+                <img class="desktop" src="img/young-people.jpg" alt="giovani in spiaggia" width="100%">
+                <img class="mobile" src="img/young-people-laugh.jpg" alt="giovani ridono bevendo tè">
+                <img class="mobile" id="noTablet" src="img/people-beach-opt-big.jpg" alt="giovani in spiaggia di spalle">
             </figure>
     </section>
     </main>
@@ -56,9 +60,7 @@
      
  </footer>
 
- 
-</body>
-<script>
+ <script>
     document.getElementById( 'hamburger' ).addEventListener( 'click', function () {
 
 document.getElementById( 'apriMenu' ).toggleClass( 'hide' );
@@ -79,4 +81,6 @@ if( this.className.split( ' ' ).indexOf( className ) == -1 ) {
 };
 
 </script>
+</body>
+
 </html>
