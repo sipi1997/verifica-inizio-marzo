@@ -41,7 +41,7 @@
             
             <span class="wpcf7-list-item last">
                 <label>
-                    <input type="radio" name="radio-169" value="Non paziente" id="non-paziente" checked="checked" />
+                    <input type="radio" name="radio-169" value="Non paziente" id="non-paziente" checked="checked" onclick="hideOptions()" />
                     <span class="wpcf7-list-item-label">
                         Non paziente
                     </span>
@@ -90,8 +90,8 @@
          let options_div = document.getElementById('options-div');
          if (nonPaziente.checked) {
             options_div.style.display = "none";
-         } else return (0);
       }
+    }
     </script>
 
 
