@@ -318,7 +318,7 @@ footer p {
 
 form {
     background-color: #648E78;
-    width: 700px;
+    width: 100%;
     margin: 50px auto;
     text-align: center;
     padding: 30px;
@@ -335,6 +335,7 @@ form input[type="submit"] {
     display: block;
     margin: 0 auto;
 }
+
 
 
 .about-us {

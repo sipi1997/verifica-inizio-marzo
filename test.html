@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    
+
+    <!-- <label for="Paziente">Paziente</label>
+    <input type="checkbox" name="Paziente" id="paziente" onclick="showOptions()">
+
+    <label for="Non paziente">Non paziente</label>
+    <input type="checkbox" name="Non paziente" id="non paziente">
+
+    <div id="options-div">
+        <label for="Si">Si</label>
+        <input type="radio"> 
+
+        <label for="no">No</label>
+        <input type="radio"> 
+    </div> -->
+
+
+
+    <!-- Qui la disposizione elementi non mi piace -->
+    <label> Come vuoi iscriverti? (*) </label> <span class="wpcf7-form-control-wrap" data-name="radio-169">
+    
+        <span class="wpcf7-form-control wpcf7-radio">
+            <span class="wpcf7-list-item first">
+                <label>
+                    <input type="radio" name="radio-169" value="Paziente" id="paziente" onclick="showOptions()"  />
+                    <span class="wpcf7-list-item-label">
+                        Paziente
+                    </span>
+                </label>
+            </span>
+            
+            <span class="wpcf7-list-item last">
+                <label>
+                    <input type="radio" name="radio-169" value="Non paziente" id="non-paziente" checked="checked" />
+                    <span class="wpcf7-list-item-label">
+                        Non paziente
+                    </span>
+                </label>
+            </span>
+        </span>
+    </span>
+    <br />
+<div id="options-div" class="hide">
+<label> Se paziente </label> 
+
+    <label for="Linfedema primario">
+    <input type="checkbox" name="checkbox-728[]" value="Linfedema primario" />
+    Linfedema primario</label>
+
+    <label for="Linfedema secondario">
+    <input type="checkbox" name="checkbox-728[]" value="Linfedema secondario" />
+    Linfedema secondario</label>
+
+    <label for="Arto superiore">
+        <input type="checkbox" name="checkbox-728[]" value="Arto superiore" />
+        Arto superiore</label>
+
+    <label for="Arto inferiore">
+        <input type="checkbox" name="checkbox-728[]" value="Arto inferiore" />
+        Arto inferiore</label>
+
+</div>
+
+
+
+    <script>
+         function showOptions() {
+         let paziente = document.getElementById('paziente');
+         let options_div = document.getElementById('options-div');
+         if (paziente.checked) {
+            options_div.style.display = "flex";
+         } else {
+            options_div.style.display = "none";
+         }
+      }
+
+      //Questa ancora non funziona
+      function hideOptions() {
+         let nonPaziente = document.getElementById('non-paziente');
+         let options_div = document.getElementById('options-div');
+         if (nonPaziente.checked) {
+            options_div.style.display = "none";
+         } else return (0);
+      }
+    </script>
+
+
+
+</body>
+</html>
