@@ -59,6 +59,29 @@ footer figure {
     right: 30px
 }
 
+.about-us .desktop {
+    display: none;
+}
+
+
+.about-us .mobile {
+    display: block;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.about-us .section-title{
+    padding: 30px;
+}
+
+.about-us .section-title h1 {
+    font-size: 30px;
+}
+
+.about-us .section-title p {
+    font-size: 14px;
+}
+
 }
 
 @media (min-width: 575px) and (max-width: 768px) {
@@ -155,6 +178,23 @@ footer figure {
         bottom:120px;
         right: 30px
     }
+
+    .about-us .desktop {
+        display: none;
+    }
+
+    .about-us .mobile {
+        display: block;
+        width: 300px;
+    }
+
+    #noTablet {
+        display: none;
+    }
+
+    .about-us .section-title{
+        padding: 30px;
+    }
     
 }
 
@@ -232,5 +272,9 @@ footer figure {
         
         .sezione-scopri .columns .left-column {
             width: 320px;
+        }
+
+        .about-us .section-title{
+            padding: 20px;
         }
 }
